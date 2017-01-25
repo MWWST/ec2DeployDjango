@@ -25,7 +25,7 @@ SECRET_KEY = 'm2#*u(%)w35$!&tli2p$ygll73&exo8@)_ps*umky37w#n$7fo'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.elasticbeanstalk.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -75,12 +75,12 @@ WSGI_APPLICATION = 'beltReviewer.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
 
 # DATABASES = {
 #     'default': {
@@ -93,16 +93,16 @@ WSGI_APPLICATION = 'beltReviewer.wsgi.application'
 #     }
 # }
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'beltreview',
-        'USER': 'Weitzmam',
-        'PASSWORD': 'i229rorY!',
-        'HOST': 'aag70zr4p1fo69.cdjmfnhupitf.us-west-2.rds.amazonaws.com',
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'beltreview',
+#         'USER': 'Weitzmam',
+#         'PASSWORD': 'i229rorY!',
+#         'HOST': 'aag70zr4p1fo69.cdjmfnhupitf.us-west-2.rds.amazonaws.com',
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
